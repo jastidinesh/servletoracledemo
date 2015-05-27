@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/DBO/ResAdmin" method="post">
+<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/DBO/ResCredits" method="post">
+<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/DBO/ComAdmin" method="post">
+<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/DBO/ComCredits" method="post">
+<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/DBO/Select" method="post">
+<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/DBO/Laptops" method="post">
+<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/DBO/MyAccount" method="post">
+<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -174,12 +174,12 @@
 </script>
 	
 	
-	<form name="deleteuser" action="/DBO/DeleteUser" method="post">
+	<form name="deleteuser" action="/heroku-postgres-e55986aa/DeleteUser" method="post">
 		<input type="hidden" name="user">
 		<input type="hidden" name="user1" value="com_leader">
 	</form>
 	
-	<form name="submitcredit" action="/DBO/UpdateCredit" method="post">
+	<form name="submitcredit" action="/heroku-postgres-e55986aa/UpdateCredit" method="post">
 		<input type="hidden" name="credit">
 		<input type="hidden" name="user">
 		<input type="hidden" name="user1" value="com_leader">

@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/DBO/ResAdmin" method="post">
+<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/DBO/ResCredits" method="post">
+<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/DBO/ComAdmin" method="post">
+<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/DBO/ComCredits" method="post">
+<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/DBO/Select" method="post">
+<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/DBO/Laptops" method="post">
+<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/DBO/MyAccount" method="post">
+<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -154,7 +154,7 @@
 	String user = request.getParameter("user");
 	if(user == null){
 		{
-			String site = new String("/DBO/Login");
+			String site = new String("/heroku-postgres-e55986aa/Login");
 			response.setStatus(response.SC_MOVED_TEMPORARILY);
 			response.setHeader("Location", site); 
 		}
@@ -238,7 +238,7 @@
 							row.insertCell(2).innerHTML = author[i];
 							row.insertCell(3).innerHTML = '<a href="javascript:view_com('+id_set[i]+')">'+name1[i].substring(0,6)+'....</a>';
 							row.insertCell(4).innerHTML = created[i];
-							row.insertCell(5).innerHTML = '<form id="rating" method="post" action="/DBO/AddRate">'+
+							row.insertCell(5).innerHTML = '<form id="rating" method="post" action="/heroku-postgres-e55986aa/AddRate">'+
 															'<input type="number" min=0 max=5 name="rate" required value='+${rating}[i]+'>/5'+
 															'<button type="submit" class="btn btn-success btn-xs" onclick="add_rating('+id_set[i]+')"><span class="glyphicon glyphicon-ok-sign"></span></button>'+
 															'<input type="hidden" name="user">'+
@@ -246,14 +246,14 @@
 															'<input type="hidden" name="res_id">'+
 															'</form>';
 							if(${spam}[i])
-								row.insertCell(6).innerHTML = '<form id="spam" method="post" action="/DBO/AddRevSpam">'+
+								row.insertCell(6).innerHTML = '<form id="spam" method="post" action="/heroku-postgres-e55986aa/AddRevSpam">'+
 															'<span class="glyphicon glyphicon-flag" style="color:red" onclick="spam_add('+id_set[i]+')"></span>'+
 															'<input type="hidden" name="user">'+
 															'<input type="hidden" name="rev_id">'+
 															'<input type="hidden" name="res_id">'+
 															'</form>';
 							else
-								row.insertCell(6).innerHTML = '<form id="spam" method="post" action="/DBO/AddRevSpam">'+
+								row.insertCell(6).innerHTML = '<form id="spam" method="post" action="/heroku-postgres-e55986aa/AddRevSpam">'+
 															'<span class="glyphicon glyphicon-flag" onclick="spam_add('+id_set[i]+')"></span>'+
 															'<input type="hidden" name="user">'+
 															'<input type="hidden" name="rev_id">'+
@@ -272,7 +272,7 @@
 				    </tr>
 		    	</tbody>
 			</table>
-			<form action="/DBO/Comment" method="post" id="get_com">
+			<form action="/heroku-postgres-e55986aa/Comment" method="post" id="get_com">
 				<input type="hidden" name="user">
 				 <input type="hidden" name="rev_id">
 				 <input type="hidden" name="res_id">
@@ -289,7 +289,7 @@
         	<h4 class="modal-title custom_align" id="Heading">Adding Review</h4>
       	  </div>
        <div class="modal-body">
-       <form action="/DBO/AddRev" method="post" id="myform">
+       <form action="/heroku-postgres-e55986aa/AddRev" method="post" id="myform">
 	      <script type="text/javascript">
 	      	function add_rev()
 	      	{

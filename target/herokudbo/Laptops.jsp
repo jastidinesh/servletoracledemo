@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/DBO/ResAdmin" method="post">
+<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/DBO/ResCredits" method="post">
+<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/DBO/ComAdmin" method="post">
+<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/DBO/ComCredits" method="post">
+<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/DBO/Select" method="post">
+<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/DBO/Laptops" method="post">
+<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/DBO/MyAccount" method="post">
+<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -154,7 +154,7 @@
 	String user = request.getParameter("user");
 	if(user == null){
 		{
-			String site = new String("/DBO/Login");
+			String site = new String("/heroku-postgres-e55986aa/Login");
 			response.setStatus(response.SC_MOVED_TEMPORARILY);
 			response.setHeader("Location", site); 
 		}
@@ -198,11 +198,11 @@
 		</div>
 		<input name="user" type="hidden">
       </div>
-      <form action="/DBO/BrandChange" method="post" id="form_brand">
+      <form action="/heroku-postgres-e55986aa/BrandChange" method="post" id="form_brand">
       <input type="hidden" name="brand">
       <input type="hidden" name="user">
       </form>
-      <form action="/DBO/TypeChange" method="post" id="form_type">
+      <form action="/heroku-postgres-e55986aa/TypeChange" method="post" id="form_type">
       <input type="hidden" name="type">
       <input type="hidden" name="user">
       </form>
@@ -256,7 +256,7 @@
 				    </tr>
 		    	</tbody>
 			</table>
-			<form action="/DBO/LapCom" method="post" id="get_com">
+			<form action="/heroku-postgres-e55986aa/LapCom" method="post" id="get_com">
 				<input type="hidden" name="user">
 				 <input type="hidden" name="com_id">
 			</form>            
@@ -272,7 +272,7 @@
         	<h4 class="modal-title custom_align" id="Heading">Adding Comment</h4>
       	  </div>
        <div class="modal-body">
-       <form method="post" id="myform" action="/DBO/AddLapCom">
+       <form method="post" id="myform" action="/heroku-postgres-e55986aa/AddLapCom">
        <textarea rows="2" cols="70" placeholder="Enter Your Comment" maxlength="70" name="lap_com" required></textarea>
         <select class="form-control col-sm-2" name="type" id="com-type" required onchange="com_type()">
                 <option value="Review" selected>Review</option>

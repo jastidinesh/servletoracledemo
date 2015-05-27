@@ -73,31 +73,31 @@
 
 </script>
 
-<form name="usersherf" action="/DBO/ResAdmin" method="post">
+<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/DBO/ResCredits" method="post">
+<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/DBO/ComAdmin" method="post">
+<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/DBO/ComCredits" method="post">
+<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/DBO/Select" method="post">
+<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/DBO/Laptops" method="post">
+<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/DBO/MyAccount" method="post">
+<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -217,20 +217,20 @@
                       </tr>
                       <tr>
                       <td>
-	                      <form action="/DBO/Bank" method ="post" id="fvb">
+	                      <form action="/heroku-postgres-e55986aa/Bank" method ="post" id="fvb">
 	                      	<input type="hidden" name="user">
 		                  	<button type="button" class="btn btn-primary btn-sm" onclick="view_bank()">Bank Details</button>
 		                  </form>
 	                  </td>
 	                  <td>
-		                  <form action="/DBO/AddBank" method ="post" id="fab">
+		                  <form action="/heroku-postgres-e55986aa/AddBank" method ="post" id="fab">
 		                  	<input type="hidden" name="user">
 		                  	<input type="hidden" name="flag" value="false">
 		                  	<button type="button" class="btn btn-primary btn-sm" onclick="add_bank()">Add Bank</button>
 		                  </form>
 	                  </td>
 	                  <td>
-		                  <form action="/DBO/AddCard" method ="post" id="fac">
+		                  <form action="/heroku-postgres-e55986aa/AddCard" method ="post" id="fac">
 		                  	<input type="hidden" name="user">
 		                  	<input type="hidden" name="flag" value="false">
 		                  	<button type="button" class="btn btn-primary btn-sm" onclick="add_card()">Add Credit</button>
