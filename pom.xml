@@ -19,12 +19,6 @@
 	      <artifactId>postgresql</artifactId>
 	      <version>9.4-1201-jdbc4</version>
      </dependency>
-     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <finalName>herokudbo</finalName>
@@ -32,15 +26,8 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.4</version>
+        <version>4.0</version>
         </plugin>
-		<plugin>            
-  		<groupId>org.apache.maven.plugins</groupId>
-  		<artifactId>maven-war-plugin</artifactId>
-  		<configuration>
-    	<webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-  		</configuration>
-	   </plugin>
     </plugins>
   </build>
 </project>
