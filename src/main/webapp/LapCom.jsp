@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
+<form name="usersherf" action="/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
+<form name="creditshref" action="/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
+<form name="userscomherf" action="/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
+<form name="creditcomshref" action="/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
+<form name="resshref" action="/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
+<form name="comhref" action="/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
+<form name="myacchref" action="/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -154,7 +154,7 @@
 	String user = request.getParameter("user");
 	if(user == null){
 		{
-			String site = new String("/heroku-postgres-e55986aa/Login");
+			String site = new String("/Login");
 			response.setStatus(response.SC_MOVED_TEMPORARILY);
 			response.setHeader("Location", site); 
 		}
@@ -200,20 +200,20 @@
 						row.insertCell(3).innerHTML = ${type};
 						row.insertCell(4).innerHTML = ${brand};
 						row.insertCell(5).innerHTML = ${created};
-						row.insertCell(6).innerHTML = '<form id="rating" method="post" action="/heroku-postgres-e55986aa/ComRate">'+
+						row.insertCell(6).innerHTML = '<form id="rating" method="post" action="/ComRate">'+
 						'<input type="number" min=0 max=5 name="rate" required value='+${rating}+'>/5'+
 						'<button type="submit" class="btn btn-success btn-xs" onclick="add_rating()"><span class="glyphicon glyphicon-ok-sign"></span></button>'+
 						'<input type="hidden" name="user">'+
 						'<input type="hidden" name="com_id">'+
 						'</form>';
 						if(${spam})
-							row.insertCell(7).innerHTML = '<form id="spam" method="post" action="/heroku-postgres-e55986aa/AddCommSpam">'+
+							row.insertCell(7).innerHTML = '<form id="spam" method="post" action="/AddCommSpam">'+
 														'<span class="glyphicon glyphicon-flag" style="color:red" onclick="spam_add()"></span>'+
 														'<input type="hidden" name="user">'+
 														'<input type="hidden" name="com_id">'+
 														'</form>';
 						else
-							row.insertCell(7).innerHTML = '<form id="spam" method="post" action="/heroku-postgres-e55986aa/AddCommSpam">'+
+							row.insertCell(7).innerHTML = '<form id="spam" method="post" action="/AddCommSpam">'+
 														'<span class="glyphicon glyphicon-flag" onclick="spam_add()"></span>'+
 														'<input type="hidden" name="user">'+
 														'<input type="hidden" name="com_id">'+

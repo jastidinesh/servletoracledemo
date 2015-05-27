@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
+<form name="usersherf" action="/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
+<form name="creditshref" action="/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
+<form name="userscomherf" action="/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
+<form name="creditcomshref" action="/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
+<form name="resshref" action="/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
+<form name="comhref" action="/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
+<form name="myacchref" action="/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -176,7 +176,7 @@
 	
 </script>
 	
-	<form name="creditchartupdate" action="/heroku-postgres-e55986aa/CreditChartUpdate" method="post">
+	<form name="creditchartupdate" action="/CreditChartUpdate" method="post">
 		<input type="hidden" name="start">
 		<input type="hidden" name="end">
 		<input type="hidden" name="title">
@@ -261,7 +261,7 @@
 	
 </script>
 	
-	<form name="rescredit" action="/heroku-postgres-e55986aa/ComCreditsUpdate" method="post">
+	<form name="rescredit" action="/ComCreditsUpdate" method="post">
 		<input type="hidden" name="buy">
 		<input type="hidden" name="com">
 		<input type="hidden" name="user" value="com_leader">

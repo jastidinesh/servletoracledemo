@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
+<form name="usersherf" action="/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
+<form name="creditshref" action="/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
+<form name="userscomherf" action="/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
+<form name="creditcomshref" action="/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
+<form name="resshref" action="/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
+<form name="comhref" action="/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
+<form name="myacchref" action="/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -155,7 +155,7 @@
 	String user = request.getParameter("user");
 	if(user == null){
 		{
-			String site = new String("/heroku-postgres-e55986aa/Login");
+			String site = new String("/Login");
 			response.setStatus(response.SC_MOVED_TEMPORARILY);
 			response.setHeader("Location", site); 
 		}
@@ -208,7 +208,7 @@
 				    </tr>
 		    	</tbody>
 			</table>
-			<form action="/heroku-postgres-e55986aa/Review" method="post" id="get_rev">
+			<form action="/Review" method="post" id="get_rev">
 				<input type="hidden" name="user">
 				 <input type="hidden" name="res_id">
 			</form>            
@@ -224,7 +224,7 @@
         	<h4 class="modal-title custom_align" id="Heading">Adding Restaurant</h4>
       	  </div>
        <div class="modal-body">
-       <form method="post" id="myform" action="/heroku-postgres-e55986aa/AddRes">
+       <form method="post" id="myform" action="/AddRes">
        <textarea rows="1" cols="70" placeholder="Enter Restaurant Name" maxlength="70" name="res_name" required></textarea>
        <textarea rows="2" cols="70" placeholder="Enter Restaurant Location" maxlength="140" name="res_loc" required></textarea>
        <textarea rows="5" cols="70" placeholder="Enter Restaurant Description" maxlength="350" name="res_des" required></textarea>

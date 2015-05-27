@@ -72,31 +72,31 @@
 
 </script>
 
-<form name="usersherf" action="/heroku-postgres-e55986aa/ResAdmin" method="post">
+<form name="usersherf" action="/ResAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditshref" action="/heroku-postgres-e55986aa/ResCredits" method="post">
+<form name="creditshref" action="/ResCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="userscomherf" action="/heroku-postgres-e55986aa/ComAdmin" method="post">
+<form name="userscomherf" action="/ComAdmin" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="creditcomshref" action="/heroku-postgres-e55986aa/ComCredits" method="post">
+<form name="creditcomshref" action="/ComCredits" method="post">
 		<input type="hidden" name="user">
 	</form>
 	
-<form name="resshref" action="/heroku-postgres-e55986aa/Select" method="post">
+<form name="resshref" action="/Select" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="comhref" action="/heroku-postgres-e55986aa/Laptops" method="post">
+<form name="comhref" action="/Laptops" method="post">
 		<input type="hidden" name="user">
 	</form>
 
-<form name="myacchref" action="/heroku-postgres-e55986aa/MyAccount" method="post">
+<form name="myacchref" action="/MyAccount" method="post">
 		<input type="hidden" name="user1">
 	</form>
 
@@ -168,7 +168,7 @@ else
 	}
 </script>
 <div class="container">
-  <form class="form-horizontal" id="myform" role="form" action="/heroku-postgres-e55986aa/AddBank" method="post">
+  <form class="form-horizontal" id="myform" role="form" action="/AddBank" method="post">
   	<input type="hidden" name="user">
   	<input type="hidden" name="flag" value="true">
     <fieldset>
