@@ -92,7 +92,7 @@ public class LapCom extends HttpServlet {
 				query = "select avg(rating) from lap_rating where comid="+com_id;
 				rs = stmt.executeQuery(query);
 				rs.next();
-				avg_rating = rs.getInt("avg(rating)");
+				avg_rating = rs.getInt("avg");
 				request.setAttribute("avg_rating",avg_rating);
 				
 				query = "select rating from lap_rating where comid="+com_id+" and username='"+user_check+"'";

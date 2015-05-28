@@ -1,15 +1,14 @@
 package com;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class DBConnect {
  
 	public   Connection get_connection() {
 
-	 Connection connection = null;
+	 /*Connection connection = null;
 	 URI dbUri;
 	try {
 		dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -31,7 +30,7 @@ public class DBConnect {
 	}
 
 
-	    return connection;/*
+	    return connection;*/
 		try {
 		    Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e) {
@@ -49,6 +48,6 @@ public class DBConnect {
 		} catch (SQLException e) {
 		    e.printStackTrace();
 		}
-		return connection;*/
+		return connection;
 	}
 }

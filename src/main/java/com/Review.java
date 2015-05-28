@@ -104,7 +104,7 @@ public class Review extends HttpServlet {
 					query = "select avg(rating) from rating where revid="+rev_id.get(j);
 					rs = stmt.executeQuery(query);
 					if(rs.next())
-						avg_rating.add(rs.getFloat("avg(rating)"));
+						avg_rating.add(rs.getFloat("avg"));
 					else
 						avg_rating.add((float) 0);
 					j++;
